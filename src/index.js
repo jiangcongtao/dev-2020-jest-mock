@@ -1,0 +1,1 @@
+console.log(`--- Executing environment: ${process.env.ENVIRONMENT}`);

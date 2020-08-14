@@ -1,0 +1,26 @@
+{
+    "name": "dev-2020-jest-mock",
+    "version": "1.0.0",
+    "description": "",
+    "main": "src/index.js",
+    "scripts": {
+        "start": "node src/index.js",
+        "dev": "env-cmd -f ./config/dev.env nodemon src/index.js",
+        "test": "env-cmd -f ./config/test.env jest --testTimeout 10000 --watch"
+    },
+    "jest": {
+        "testEnvironment": "node",
+        "verbose": true
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "env-cmd": "^10.1.0",
+        "jest": "^25.3.0",
+        "nodemon": "^2.0.3"
+    },
+    "dependencies": {
+        "node-fetch": "^2.6.0"
+    }
+}
